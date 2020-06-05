@@ -113,10 +113,16 @@
 }
 
 .content{
-  height: 250px
+  width: 360px;
+  text-align: center;
+}
+
+.content-text{
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
 }
 
 .footer{
+
 }
   
 .bottom{

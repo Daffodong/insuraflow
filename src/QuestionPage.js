@@ -16,14 +16,14 @@ export const QuestionPage = props => {
     let { node, setNode } = props;
     return (
         <div class="main centered">
-                <div class="title text-center">
+                {/* <div class="title text-center">
                     <h1 class="customFont">Do I need insurance?</h1>
                     <p class="negativeMargin">a guide by the people of r/phinvest</p>
-                </div>
+                </div> */}
                <div class="content">
-                    <div class="yellowblack-text"> 
+                    <h1 class="content-text"> 
                         {node.message}
-                    </div>
+                    </h1>
                     <div class="plain-text">
                         {node.notes}
                     </div>
