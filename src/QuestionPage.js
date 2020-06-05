@@ -20,21 +20,23 @@ export const QuestionPage = props => {
                 <h1 class="customFont">Do I need insurance?</h1>
                 <p class="negativeMargin">a guide by the people of r/phinvest</p>
             </div>
-
-                <div class="yellowblack-text"> 
-                    {node.message}
+                <div class="centered">
+                    <div class="yellowblack-text"> 
+                        {node.message}
+                    </div>
+                    <div class="plain-text">
+                        {node.notes}
+                    </div>
                 </div>
-                <div class="plain-text">
-                    {node.notes}
-                </div>
-
                 <div class="yes-no-buttons-div">
-                    <button class="option left yes" onClick = {() => setNode(node.yes)}>
-                        <CheckOutlined /> 
-                    </button>
-                    <button class="option right no" onClick = {() => setNode(node.no)}>
-                        <CloseOutlined /> 
-                    </button>
+                    <div class="bottom">
+                        <button class="option left yes" onClick = {() => setNode(node.yes)}>
+                            <CheckOutlined /> 
+                        </button>
+                        <button class="option right no" onClick = {() => setNode(node.no)}>
+                            <CloseOutlined /> 
+                        </button>
+                    </div>
                 </div>
         </div>
     )

@@ -32,6 +32,7 @@
   min-width: 300px;
   margin: 0 auto;
   margin-top: 20px;
+  height:100%;
 }
 
 .text-center{
@@ -72,10 +73,6 @@
 
 }
 
-.yes-no-buttons-div{
-  margin:0 auto;
-  width:360px;
-}
 
 .option{
   border:0;
@@ -106,4 +103,17 @@
 .no{
   background-color: #ff1744;
 
+}
+
+.yes-no-buttons-div{
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bottom{
+  width:360px;
+  margin: 0 auto; 
+  margin-bottom: 10px;
 }
