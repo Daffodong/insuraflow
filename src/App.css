@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .App{
-  padding-top: 30px;
   width:100%;
   font-family: Helvetica;
 }
@@ -29,10 +28,7 @@
 
 .main{ 
   max-width: 960px;
-  min-width: 300px;
   margin: 0 auto;
-  margin-top: 20px;
-  height:400px;
 }
 
 .text-center{
@@ -44,14 +40,7 @@
   margin-bottom:20px;
 }
 
-.yellowblack-button{
-  background-color:#ffd600;
-  color:#333; 
-  font-weight: bold;
-  padding: 5px 5px;
-  width:100%;
-  border:0;
-}
+
 
 .yellowblack-text{
   border: 5px solid #333;
@@ -65,14 +54,11 @@
 
 .plain-text{
   padding: 0px 10px 10px 10px;
-  width:360px;
 
   text-align: justify;
   margin: 0 auto;
-  margin-top: 10px;
 
 }
-
 
 .option{
   border:0;
@@ -85,6 +71,20 @@
   font-size: 13pt;
   cursor: pointer;
   color:white;
+}
+
+.yellowblack-button{
+  background-color:#ffd600;
+  color:#333; 
+  font-weight: bold;
+  padding: 5px 5px;
+  width:100%;
+  border:0;
+}
+
+.option:focus{
+  outline: none;
+  box-shadow: none;
 }
 
 .left{
@@ -110,11 +110,13 @@
 }
 
 .title{
+  height:30%;
 }
 
 .content{
-  width: 360px;
   text-align: center;
+  margin: 0 auto;
+
 }
 
 .content-text{
@@ -128,7 +130,12 @@
 }
   
 .bottom{
-  width:360px;
-  margin: 0 auto; 
   margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.continue{
+  width: 30%;
+  background-color: #00e676;
 }

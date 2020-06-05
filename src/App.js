@@ -5,6 +5,8 @@ import {data} from './data.js';
 import { Choices } from './Choices.js';
 import { TitlePage } from './TitlePage.js';
 import { QuestionPage } from './QuestionPage.js';
+import { ResultsPage } from './ResultsPage.js';
+import { ContinuePage } from './ContinuePage.js';
 
 import { Layout, Typography  } from 'antd';
 import { Space, Card } from 'antd';
@@ -16,16 +18,21 @@ const { Title, Text } = Typography;
 function App() {
   const [node, setNode] = useState(data);
 
-  return (
-    <div>
-      {
-        node.type == "START" ? 
-          <TitlePage node={node} setNode={setNode} /> : 
-          <QuestionPage node={node} setNode={setNode} />
-      }
-      
-    </div>
-  );
+  switch (node.type){
+          case "START":
+            return <TitlePage node={node} setNode={setNode} />;
+          case "QUESTION":
+            return <QuestionPage node={node} setNode={setNode} />;
+          case "FINAL":
+            return <ResultsPage node={node} setNode={setNode} />;
+          case "PASS":
+            return <ContinuePage node={node} setNode={setNode} />;              
+          default:
+              return <TitlePage node={node} setNode={setNode} />;
+  }
+
 }
+      
+
 
 export default App;

@@ -7,16 +7,15 @@ import {
 } from '@ant-design/icons';
 import {data} from './data.js';
 
-export const TitlePage = props => {
+export const ResultsPage = props => {
     let { node, setNode } = props;
     return (
         <div class="centered">
             <div class="">
                 <div class="text-center">
-                    <h1 class="customFont">Do I need insurance?</h1>
-                    <p class="negativeMargin">a guide by the people of r/phinvest</p>
+                    <h1 class="customFont">{node.message}</h1>
+                    <a href="#" onClick = {() => setNode(data)}>Want to retry for a friend?</a>
                 </div>
-                <button class="option space yellowblack-button" block="true" type="primary" onClick = {() => setNode(node.start)}>START</button>
             </div>
       </div>
     )

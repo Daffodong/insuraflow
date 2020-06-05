@@ -111,7 +111,7 @@ export const data = {
     "start":{
         "type" : "QUESTION",
         "message": "Is my passive income or net worth high enough to answer for my, or my loved ones needs in case I succumb to death/ illness?",
-        "notes": "** If your target coverage is less than your passive  income (from a source that is not affected in case of critical illness/ unemployent), or if it is less than 5% of your net worth, then it may be considered enough to sustain your household's lifestyle",
+        "notes": "If your target coverage is less than your passive  income (from a source that is not affected in case of critical illness/ unemployment), or if it is less than 5% of your net worth, then it may be considered enough to sustain your household's lifestyle",
         "yes": {
             "message": "You can opt for self insurance",
             "type" : "FINAL"
