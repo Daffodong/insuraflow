@@ -1,11 +1,6 @@
 import React from "react";
-import { Button } from 'antd';
 import './App.css';
 import 'antd/dist/antd.css';  
-import {
-  RedoOutlined
-} from '@ant-design/icons';
-import {data} from './data.js';
 
 export const TitlePage = props => {
     let { node, setNode } = props;
@@ -14,7 +9,7 @@ export const TitlePage = props => {
             <div class="">
                 <div class="text-center">
                     <h1 class="customFont">Do I need insurance?</h1>
-                    <p class="negativeMargin">a guide by the people of r/phinvest</p>
+                    <p class="negativeMargin">a guide by the people of r/phinvest discord</p>
                 </div>
                 <button class="option space yellowblack-button" block="true" type="primary" onClick = {() => setNode(node.start)}>START</button>
             </div>
