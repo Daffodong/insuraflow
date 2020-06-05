@@ -15,7 +15,7 @@
 }
 
 .customFont{
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
   font-size: 30pt;
 }
 
@@ -30,6 +30,8 @@
 .main{ 
   max-width: 960px;
   min-width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .text-center{
@@ -51,23 +53,57 @@
 }
 
 .yellowblack-text{
-  background-color:#ffd600;
+  border: 5px solid #333;
   color:#333;
-  font-weight: bolder;
-  padding: 5px 10px;
+  font-weight: bold;
   width:360px;
-  border:0;
+  padding:10px;
   text-align: justify;
+  margin: 0 auto;
 }
 
 .plain-text{
-  border-bottom:solid 1px #aaa;
   padding: 0px 10px 10px 10px;
   width:360px;
-  margin-bottom: 10px;
+
   text-align: justify;
+  margin: 0 auto;
+  margin-top: 10px;
+
 }
 
-.space{
-  margin-right:10px;
+.yes-no-buttons-div{
+  margin:0 auto;
+  width:360px;
+}
+
+.option{
+  border:0;
+  padding: 10px;
+  font-weight: bolder;
+  text-align: center;
+  background-color:white;
+  width: 48%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+  cursor: pointer;
+  color:white;
+}
+
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
+.yes{
+  background-color: #00e676;
+
+}
+
+.no{
+  background-color: #ff1744;
+
 }
