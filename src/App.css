@@ -119,6 +119,8 @@
 
 .content-text{
   font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  border: 5px solid #333;
+  padding: 10px;
 }
 
 .footer{
