@@ -32,7 +32,7 @@
   min-width: 300px;
   margin: 0 auto;
   margin-top: 20px;
-  height:100%;
+  height:400px;
 }
 
 .text-center{
@@ -106,12 +106,19 @@
 }
 
 .yes-no-buttons-div{
-  position:fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
 }
 
+.title{
+}
+
+.content{
+  height: 250px
+}
+
+.footer{
+}
+  
 .bottom{
   width:360px;
   margin: 0 auto; 
