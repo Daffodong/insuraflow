@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.App{
+  padding-top: 30px;
+  width:100%;
+  font-family: Helvetica;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.customFont{
+  font-family: 'Bebas Neue';
+  font-size: 30pt;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.big{
+  font-size: 36pt;
 }
 
-.App-link {
-  color: #61dafb;
+.space{
+  margin-top:5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main{ 
+  max-width: 960px;
+  min-width: 300px;
+}
+
+.text-center{
+  text-align:center;
+}
+
+.negativeMargin{
+  margin-top:-35px;
+  margin-bottom:20px;
+}
+
+.yellowblack-button{
+  background-color:#ffd600;
+  color:#333; 
+  font-weight: bold;
+  padding: 5px 5px;
+  width:100%;
+  border:0;
+}
+
+.yellowblack-text{
+  background-color:#ffd600;
+  color:#333;
+  font-weight: bolder;
+  padding: 5px 10px;
+  width:360px;
+  border:0;
+  text-align: justify;
+}
+
+.plain-text{
+  border-bottom:solid 1px #aaa;
+  padding: 0px 10px 10px 10px;
+  width:360px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.space{
+  margin-right:10px;
 }
