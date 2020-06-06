@@ -42,7 +42,7 @@ const estatePlanningKeyPoint = {
                     "recommendationIntro": "Want to learn more about Whole life products? Explore more at: ",
                     "recommendations": [
                         {
-                            message: "r/phinvest's Whole Life Insurance topic compilation.",
+                            message: "r/phinvest's whole life insurance topic compilation.",
                             link: "https://www.reddit.com/r/phinvest/wiki/topicindex#wiki_whole_life_insurance"
                         }
                     ]
@@ -56,7 +56,7 @@ const estatePlanningKeyPoint = {
                         "recommendationIntro": "Want to learn more about BTID? Explore more at: ",
                         "recommendations": [
                             {
-                                message: "r/phinvest's BTID topic compilation.",
+                                message: "r/phinvest's btid topic compilation.",
                                 link: "https://www.reddit.com/r/phinvest/wiki/topicindex#wiki_btid"
                             }
                         ]
@@ -67,7 +67,7 @@ const estatePlanningKeyPoint = {
                         "recommendationIntro": "Want to learn more about VUL? Explore more at: ",
                         "recommendations": [
                             {
-                                message: "r/phinvest's VUL topic compilation.",
+                                message: "r/phinvest's vul topic compilation.",
                                 link: "https://www.reddit.com/r/phinvest/wiki/topicindex#wiki_investment-linked_insurance_.28vul.29"
                             }
                         ]
@@ -87,7 +87,14 @@ const keyPoint = {
         "yes": estatePlanningKeyPoint,
         "no": {
             "message": "Life insurance may not be a priority for now.",
-            "type": "FINAL"
+            "type": "FINAL",
+            "recommendationIntro": "Want to learn more about other topics? Explore more at: ",
+            "recommendations": [
+                {
+                    message: "r/phinvest's Topic Index.",
+                    link: "https://www.reddit.com/r/phinvest/wiki/topicindex"
+                }
+            ]
         }
 
     },
@@ -103,18 +110,39 @@ const keyPoint = {
                 "message": "Can I afford to pay relatively higher premiums for a long period of time?",
                 "yes": {
                     "message": "Consider getting a whole life product.",
-                    "type": "FINAL"
+                    "type": "FINAL",
+                    "recommendationIntro": "Want to learn more about Whole life products? Explore more at: ",
+                    "recommendations": [
+                        {
+                            message: "r/phinvest's whole life insurance topic compilation.",
+                            link: "https://www.reddit.com/r/phinvest/wiki/topicindex#wiki_whole_life_insurance"
+                        }
+                    ]
                 },
                 "no": {
                     "type": "QUESTION",
                     "message": "Am I willing to put in time and effort in learning how to invest on my own?",
                     "yes": {
                         "message": "BTID - Buy term, invest the difference.",
-                        "type": "FINAL"
+                        "type": "FINAL",
+                        "recommendationIntro": "Want to learn more about BTID? Explore more at: ",
+                        "recommendations": [
+                            {
+                                message: "r/phinvest's btid topic compilation.",
+                                link: "https://www.reddit.com/r/phinvest/wiki/topicindex#wiki_btid"
+                            }
+                        ]
                     },
                     "no": {
                         "message": "Look for an inexpensive VUL or a limited pay product.",
-                        "type": "FINAL"
+                        "type": "FINAL",
+                        "recommendationIntro": "Want to learn more about VUL? Explore more at: ",
+                        "recommendations": [
+                            {
+                                message: "r/phinvest's vul topic compilation.",
+                                link: "https://www.reddit.com/r/phinvest/wiki/topicindex#wiki_investment-linked_insurance_.28vul.29"
+                            }
+                        ]
                     }
                 }
             },
@@ -136,7 +164,7 @@ const amIHealthyKeyPoint = {
         "recommendationIntro": "Not sure where to get CI? You may start from here: ",
         "recommendations": [
             {
-                message: "r/phinvest's Self-insurance topic compilation.",
+                message: "r/phinvest's self-insurance topic compilation.",
                 link: "https://www.reddit.com/r/phinvest/wiki/topicindex#wiki_critical_illness_insurance"
             }
         ]
@@ -157,7 +185,7 @@ export const data = {
             "recommendationIntro": "Curious to learn more? You may start from here: ",
             "recommendations": [
                 {
-                    message: "r/phinvest's Self-insurance topic compilation.",
+                    message: "r/phinvest's self-insurance topic compilation.",
                     link: "https://www.reddit.com/r/phinvest/wiki/topicindex#wiki_self-insurance"
                 }
             ]
@@ -178,7 +206,7 @@ export const data = {
                     "recommendationIntro": "No idea about HMOs? You may start from here:",
                     "recommendations": [
                         {
-                            message: "r/phinvest's HMO topic compilation.",
+                            message: "r/phinvest's hmo topic compilation.",
                             link: "https://www.reddit.com/r/phinvest/wiki/topicindex#wiki_hmo"
                         }
                     ]
