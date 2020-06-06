@@ -18,7 +18,8 @@ export const TitlePage = props => {
         <div class="credits">
             <p>
                 Special credits to NostalgiaWitch, ninja4Lyf, 8ghtsaves, ~LoafieBear, and the rest of the people at r/phinvest discord for making this guide possible. 
-                </p>
+                See the original thread <a target="_blank" href="https://www.reddit.com/r/phinvest/comments/gvo762/kickoff_of_rphinvest_personal_finance_guide/">here.</a> 
+            </p>
         </div>
       </div>
     )
