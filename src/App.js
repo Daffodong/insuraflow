@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import './App.css';
+
 import { data } from './data.js';
 import { TitlePage } from './TitlePage.js';
 import { QuestionPage } from './QuestionPage.js';
 import { ResultsPage } from './ResultsPage.js';
 import { ContinuePage } from './ContinuePage.js';
+import './App.css';
 
 function App() {
   const [node, setNode] = useState(data);

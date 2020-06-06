@@ -1,9 +1,9 @@
 import React from "react";
-import './App.css';
 import {
     CheckOutlined,
     CloseOutlined
 } from '@ant-design/icons';
+import './App.css';
 
 export const QuestionPage = props => {
     let { node, setNode } = props;

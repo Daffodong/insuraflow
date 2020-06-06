@@ -1,6 +1,6 @@
 import React from "react";
-import './App.css';
 import 'antd/dist/antd.css';  
+import './App.css';
 
 export const TitlePage = props => {
     let { node, setNode } = props;
