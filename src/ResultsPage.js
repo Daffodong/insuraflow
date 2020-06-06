@@ -1,11 +1,11 @@
 import React from "react";
 import { Button } from 'antd';
 import './App.css';
-import 'antd/dist/antd.css';  
+import 'antd/dist/antd.css';
 import {
-  RedoOutlined
+    RedoOutlined
 } from '@ant-design/icons';
-import {data} from './data.js';
+import { data } from './data.js';
 
 export const ResultsPage = props => {
     let { node, setNode } = props;
@@ -14,9 +14,32 @@ export const ResultsPage = props => {
             <div class="">
                 <div class="text-center">
                     <h1 class="customFont">{node.message}</h1>
-                    <a href="#" onClick = {() => setNode(data)}>Want to retry for a friend?</a>
+                    <button class="option continue" onClick={() => setNode(data)}>
+                        RETRY FOR A FRIEND
+                    </button>
+
                 </div>
+                {
+                    node.recommendations !== undefined ?
+                        (<div class="recommendations">
+                            <span>{node.recommendationIntro}</span>
+                            <ul>
+                                {
+
+
+                                    node.recommendations.map((value, index) => {
+                                        return (
+                                            <li key={index}><a href={value.link} target="_blank">{value.message}</a></li>
+                                        )
+                                    })
+
+
+
+                                }
+                            </ul>
+                        </div>) : ""
+                }
             </div>
-      </div>
+        </div>
     )
 }

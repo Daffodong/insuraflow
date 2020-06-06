@@ -11,7 +11,7 @@ export const TitlePage = props => {
                     <h1 class="customFont">Do I need insurance?</h1>
                     <p class="negativeMargin">a guide by the people of r/phinvest discord</p>
                 </div>
-                <button class="option space yellowblack-button" block="true" type="primary" onClick = {() => setNode(node.start)}>START</button>
+                <button class="option space start-button" block="true" type="primary" onClick = {() => setNode(node.start)}>START</button>
             </div>
       </div>
     )

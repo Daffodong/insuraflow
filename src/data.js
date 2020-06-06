@@ -1,3 +1,8 @@
+const lifeInsuranceNotAPriority = {
+    "message": "Life insurance may not be a priority for now.",
+    "type" : "FINAL"
+}
+
 const estatePlanningKeyPoint = {
     "type" : "QUESTION",
     "message" : "Do I need the insurance for estate planning purposes?",
@@ -8,18 +13,12 @@ const estatePlanningKeyPoint = {
     "no" : {
         "type" : "QUESTION",
         "message" : "Are my children grown up?",
-        "yes" : {
-            "message": "Life insurance may not be a priority for now.",
-            "type" : "FINAL"
-        },
+        "yes" : lifeInsuranceNotAPriority,
         "no" : {
             "type" : "QUESTION",
             "message" : "Am I insured adequately under a group insurance arrangement (i.e. from a permanent company)?",
             "notes" : "**Recommended life insurance coverage is around 3-5x of your household's annual expenses.",
-            "yes" : {
-                "message": "Life insurance may not be a priority for now.",
-                "type" : "FINAL"
-            },
+            "yes" : lifeInsuranceNotAPriority,
             "no" : {
                 "type" : "QUESTION",
                 "message" : "Can I afford to pay relatively higher premiums for a long period of time?",
@@ -113,8 +112,20 @@ export const data = {
         "message": "Is my passive income or net worth high enough to answer for my, or my loved ones needs in case I succumb to death/ illness?",
         "notes": "If your target coverage is less than your passive  income (from a source that is not affected in case of critical illness/ unemployment), or if it is less than 5% of your net worth, then it may be considered enough to sustain your household's lifestyle",
         "yes": {
+            "name" : "SelfInsurance",
             "message": "You can opt for self insurance.",
-            "type" : "FINAL"
+            "type" : "FINAL",
+            "recommendationIntro" : "Curious to learn more? Read through these links: ",
+            "recommendations" : [
+                {
+                    message: "VUL vs BTID vs Self-insurance comparison",
+                    link: "https://www.reddit.com/r/phinvest/comments/c4zsxu/vul_vs_btid_vs_selfinsurance_comparison/"
+                }, 
+                {
+                    message: "r/phinvest Search results",
+                    link: "https://www.reddit.com/r/phinvest/search/?q=self%20insurance&restrict_sr=1"
+                }
+            ]
         },
         "no" : {
             "type" : "QUESTION",
