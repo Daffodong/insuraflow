@@ -15,7 +15,7 @@ export const ResultsPage = props => {
                 <div class="text-center">
                     <h1 class="customFont">{node.message}</h1>
                     <button class="option continue" onClick={() => setNode(data)}>
-                        RETRY FOR A FRIEND
+                        RETRY, FOR A FRIEND.
                     </button>
 
                 </div>
