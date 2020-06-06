@@ -31,6 +31,26 @@ export const ContinuePage = props => {
                         </button>
                     </div>
                 </div>
+                {
+                    node.recommendations !== undefined ?
+                        (<div class="recommendations">
+                            <span>{node.recommendationIntro}</span>
+                            <ul>
+                                {
+
+
+                                    node.recommendations.map((value, index) => {
+                                        return (
+                                            <li key={index}><a href={value.link} target="_blank">{value.message}</a></li>
+                                        )
+                                    })
+
+
+
+                                }
+                            </ul>
+                        </div>) : ""
+                }
         </div>
     )
 }

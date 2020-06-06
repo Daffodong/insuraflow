@@ -100,7 +100,18 @@ const amIHealthyKeyPoint = {
     "no" : {
         "type" : "PASS",
         "message" : "Consider getting a CI (Critical Illness) coverage. When you have one, please proceed.",
-        "next" : keyPoint
+        "next" : keyPoint,
+        "recommendationIntro" : "Not sure where to get CI? Browse through these links: ",
+            "recommendations" : [
+                {
+                    message: "Reddit thread: Where to get term insurance with critical illness coverage",
+                    link: "https://www.reddit.com/r/phinvest/comments/9s5szz/btid_approach_advice_on_where_to_get_term/"
+                }, 
+                {
+                    message: "Reddit thread: [Company Redacted]'s insurance policy offering.",
+                    link: "https://www.reddit.com/r/phinvest/comments/ev5vpy/fwds_insurance_for_only_1799php_annually_for_a/"
+                }
+            ]
     }
 }
 
@@ -118,7 +129,7 @@ export const data = {
             "recommendationIntro" : "Curious to learn more? Read through these links: ",
             "recommendations" : [
                 {
-                    message: "VUL vs BTID vs Self-insurance comparison",
+                    message: "Reddit thread: VUL vs BTID vs Self-insurance comparison",
                     link: "https://www.reddit.com/r/phinvest/comments/c4zsxu/vul_vs_btid_vs_selfinsurance_comparison/"
                 }, 
                 {
@@ -139,9 +150,37 @@ export const data = {
                 "no" : {
                     "type" : "PASS",
                     "message" : "You need HMO/ health insurance. When you have one, please proceed.",
-                    "next" : amIHealthyKeyPoint
+                    "next" : amIHealthyKeyPoint,
+                    "recommendationIntro" : "No idea about HMOs? Read through these links: ",
+                    "recommendations" : [
+                        {
+                            message: "Reddit thread: Hey guys, for those supporting their aging parent, what have you guys in place to ensure that their health services are covered even after they reach 60? ",
+                            link: "https://www.reddit.com/r/phinvest/comments/e4cdzr/hey_guys_for_those_supporting_their_aging_parent/"
+                        },
+                        {
+                            message: "Reddit thread: Best bang for the buck hmo for parents.",
+                            link: "https://www.reddit.com/r/phinvest/comments/cdauso/best_bang_for_the_buck_hmo_for_parents/"
+                        },
+                        {
+                            message: "Reddit thread: How does your current health care plan/ health fund?",
+                            link: "https://www.reddit.com/r/phinvest/comments/b240ep/how_does_your_current_health_care_planhealth_fund/"
+                        },
+                        {
+                            message: "Reddit thread: Undeserved rant when philhealth and hmo fail",
+                            link: "https://www.reddit.com/r/phinvest/comments/dlzpe3/undeserved_rant_when_philhealth_and_hmo_fail/"
+                        },
+                        {
+                            message: "Reddit thread: New Philhealth Contributions. Ouch!",
+                            link: "https://www.reddit.com/r/phinvest/comments/e8zx4z/new_philhealth_contributions_ouch/"
+                        },
+                        {
+                            message: "PHInvest Reddit FAQ",
+                            link: "https://www.reddit.com/r/phinvest/wiki/faq"
+                        }
+                    ]
                 }
             }
+            
         }
     }
 }
