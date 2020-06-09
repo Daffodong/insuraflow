@@ -177,7 +177,7 @@ export const data = {
     "start": {
         "type": "QUESTION",
         "message": "Is my passive income or net worth high enough to answer for my, or my loved ones needs in case I succumb to death/ illness?",
-        "notes": "If your target coverage is less than your passive  income (from a source that is not affected in case of critical illness/ unemployment), or if it is less than 5% of your net worth, then it may be considered enough to sustain your household's lifestyle",
+        "notes": "If your target coverage is less than your passive income (from a source that is not affected in case of critical illness/ unemployment), or if it is less than 5% of your net worth, then it may be considered enough to sustain your household's lifestyle",
         "yes": {
             "name": "SelfInsurance",
             "message": "You can opt for self insurance.",
@@ -192,12 +192,12 @@ export const data = {
         },
         "no": {
             "type": "QUESTION",
-            "message": "Am I already protected against unforseen medical expenses?",
+            "message": "Am I already protected against unforeseen medical expenses?",
             "yes": keyPoint,
             "no": {
                 "type": "QUESTION",
                 "message": "Do I have adequate HMO/ health insurance coverage?",
-                "notes": "HMO coverage should be around 150K-500K per year on average, while Critical Illess coverage should be at least 1M.",
+                "notes": "HMO coverage should be around 150K-500K per year on average, while Critical Illness coverage should be at least 1M.",
                 "yes": amIHealthyKeyPoint,
                 "no": {
                     "type": "PASS",
